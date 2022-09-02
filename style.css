@@ -14,9 +14,10 @@ html {
 body {
     box-sizing: inherit;
     height: 100vh;
-    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    gap: 4px;
+    text-align: center;
 }
 
 .aside {
