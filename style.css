@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    box-sizing: inherit;
+    box-sizing: border-box;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -38,7 +38,7 @@ body {
     grid-row: 1/4;
     display: grid;
     grid-template-rows: 3rem auto auto;
-    padding: .5rem;
+
 }
 .dashboard-logo {
     display: grid;
@@ -47,6 +47,8 @@ body {
     align-items: center;
     color: white;
     width: 100%;
+    height: auto;
+    margin-bottom: var(--margin-bottom-big);
 }
 .dashboard-logo__logo {
     font-size: 1.5rem;
@@ -58,7 +60,6 @@ body {
 
 /* nav lists */
 .aside__navigation-container {
-    padding-left: .3rem;
 }
 .aside__navigation-container:first-child {
     margin-bottom: var(--margin-bottom-big);
@@ -68,6 +69,13 @@ body {
     text-align: left;
     list-style: none;
     text-decoration: none;
+}
+.aside__list li {
+    padding-left: 1rem;
+}
+.aside__list li:hover {
+    border-left: 2px solid var(--primary-color-dark);
+    background-color: #479cdc;
 }
 .aside__list li:not(:last-child) {
     margin-bottom: var(--margin-bottom-small);
