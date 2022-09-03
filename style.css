@@ -231,7 +231,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 .card {
-    height: 200px;
+    height: 225px;
     background-color: lightseagreen;
     border-radius: 1rem;
 }
@@ -256,6 +256,22 @@ body {
     margin-bottom: var(--margin-bottom-medium);
     text-align: left;
 }
+.announcements-container {
+    padding: 3rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+/* .announcements-container > div:not(:last-child) {
+    padding-bottom: 5rem;
+} */
+.announcements-container__div {
+    background-color: lightblue;
+}
+
+
 
 .main__trending {
     border: 2px solid lightgreen;
