@@ -37,24 +37,26 @@ body {
     grid-column: 1/2;
     grid-row: 1/4;
     display: grid;
-    grid-template-rows: 3rem auto auto;
+    row-gap: 5rem;
+    grid-template-rows: 5rem auto auto;
 
 }
 .dashboard-logo {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     color: white;
     width: 100%;
     height: auto;
     margin-bottom: var(--margin-bottom-big);
+    padding-left: 2rem;
 }
 .dashboard-logo__logo {
-    font-size: 1.5rem;
+    font-size: 5rem;
 }
 .dashboard-logo__heading {
-    font-size: 1rem;
+    font-size: 3rem;
 }
 /* end of aside logo */
 
@@ -71,10 +73,10 @@ body {
     text-decoration: none;
 }
 .aside__list li {
-    padding-left: 1rem;
+    padding-left: 3rem;
 }
 .aside__list li:hover {
-    border-left: 2px solid var(--primary-color-dark);
+    border-left: .5rem solid var(--primary-color-dark);
     background-color: #479cdc;
 }
 .aside__list li:not(:last-child) {
@@ -86,7 +88,7 @@ body {
     gap: .5rem;
     text-decoration: none;
     color: white;
-    font-size: .5rem;
+    font-size: 2rem;
 
 }
 
