@@ -109,7 +109,7 @@ body {
 /* start of header css */
 .header {
     color: var(--body-color-light);
-    padding: 2rem 5rem;
+    padding: 1rem 5rem;
 }
 
 .header__section-1 {
@@ -162,7 +162,7 @@ body {
     justify-content: left;
     align-items: center; }
     .logo-box__img {
-      width: 10rem;
+      width: 8rem;
       user-select: none; }
     .logo-box__header {
       font-family: 'Orbitron', sans-serif, monospace;
