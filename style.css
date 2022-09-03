@@ -243,24 +243,26 @@ body {
     background-color: lightcoral;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    height: auto;
 }
 .main__announcements {
     border: 2px solid red;
     margin-bottom: var(--margin-bottom-big);
     
 }
-.main__announcements > h1 {
+.main__announcements > h1, .main__trending > h1 {
     font-size: var(--heading-primary);
     font-weight: 500;
     margin-bottom: var(--margin-bottom-medium);
+    text-align: left;
 }
 
 .main__trending {
     border: 2px solid lightgreen;
+
 }
-.main__trending > h1 {
-    font-size: var(--heading-primary);
-    font-weight: 500;
-    margin-bottom: var(--margin-bottom-medium);
+.trending-container {
+    width: 100%;
+    display: grid;
 }
 
