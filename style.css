@@ -93,12 +93,6 @@ body {
 }
 
 
-
-.header {
-    background-color: lightcoral;
-    grid-column: 2/3;
-}
-
 .main {
     background-color: lightblue;
     grid-column: 2/3;
@@ -108,3 +102,37 @@ body {
     background-color: lightgreen;
     grid-column: 2/3;
 }
+/* end of aside css */
+
+/* start of header css */
+.header {
+    color: white;
+    padding: 2rem 5rem;
+}
+
+.header__section-1 {
+    display: grid;
+}
+.header__search-bar-icon {
+    color: white;
+    font-size: 2rem;
+}
+.header__search-bar {
+
+}
+.logo-box {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center; }
+    .logo-box__img {
+      width: 15rem;
+      user-select: none; }
+    .logo-box__header {
+      font-family: 'Orbitron', sans-serif, monospace;
+      font-size: 2rem;
+      color: #777;
+      font-weight: 700;
+      user-select: none; }
+  
