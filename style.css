@@ -3,6 +3,8 @@
     --primary-color-light: #00b3ca;
     --primary-color-dark: #114e7b;
 
+    --body-color-dark: #e2e8f0;
+    --body-color-light: #fff;
     /* margin padding */
     --margin-bottom-small: .5rem;
     --margin-bottom-big: 2rem;
@@ -106,32 +108,65 @@ body {
 
 /* start of header css */
 .header {
-    color: white;
+    color: var(--body-color-light);
     padding: 2rem 5rem;
 }
 
 .header__section-1 {
     display: grid;
-}
-.header__search-bar-icon {
-    color: white;
-    font-size: 2rem;
-}
-.header__search-bar {
+    grid-template-columns: 66% auto auto;
+    align-items: center;
 
 }
+.header__search-bar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+
+
+}
+.header__search-bar-icon {
+    color: black;
+    font-size: 3rem;
+    width: 10%;
+}
+.header__search-bar-input {
+    width: 85%;
+    height: 3rem;
+    background-color: var(--body-color-dark);
+    border: none;
+    border-radius: 25px;
+    padding-left: 1.5rem;
+}
+.header__search-bar-input:focus {
+    outline: none;
+}
+
+.header__notification {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__notification > span {
+    color: black;
+    font-size: 3rem;
+}
+
+
 .logo-box {
-    background-color: white;
+    background-color: var(--body-color-light);
     width: 100%;
     display: flex;
     justify-content: left;
     align-items: center; }
     .logo-box__img {
-      width: 15rem;
+      width: 10rem;
       user-select: none; }
     .logo-box__header {
       font-family: 'Orbitron', sans-serif, monospace;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #777;
       font-weight: 700;
       user-select: none; }
