@@ -9,6 +9,11 @@
     --margin-bottom-small: .5rem;
     --margin-bottom-medium: 1rem;
     --margin-bottom-big: 2rem;
+
+    /* heading font size */
+    --heading-primary: 3rem;
+    --heading-secondary: 2rem;
+    --heading-tertiary: 1rem;
 }
 
 *,
@@ -31,7 +36,7 @@ body {
     grid-template-columns: 1fr 4fr;
     /* gap: 4px; */
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* aside logo */
@@ -59,13 +64,12 @@ body {
     font-size: 5rem;
 }
 .dashboard-logo__heading {
-    font-size: 3rem;
+    font-size: var(--heading-primary);
 }
 /* end of aside logo */
 
 /* nav lists */
-.aside__navigation-container {
-}
+
 .aside__navigation-container:first-child {
     margin-bottom: var(--margin-bottom-big);
 }
@@ -91,7 +95,7 @@ body {
     gap: .5rem;
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: var(--heading-secondary);
 
 }
 
@@ -126,7 +130,7 @@ body {
 }
 .header__search-bar-icon {
     color: black;
-    font-size: 3rem;
+    font-size: var(--heading-primary);
     width: auto;
 }
 .header__search-bar-input {
@@ -149,7 +153,7 @@ body {
 }
 .header__notification > span {
     color: black;
-    font-size: 3rem;
+    font-size: var(--heading-primary);
 }
 
 .logo-box {
@@ -172,7 +176,7 @@ body {
     width: 14rem;
   }
   .logo-box__header--2 {
-    font-size: 3rem;
+    font-size: var(--heading-primary);
   }
   .logo-box__paragraph {
     text-align: left;
@@ -198,6 +202,7 @@ body {
 }
 .header__btn:hover {
     cursor: pointer;
+
 }
 /* end of header css */
 
@@ -205,4 +210,57 @@ body {
 .main {
     grid-column: 2/3;
     background-color: var(--body-color-dark);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 2rem;
+    gap: 2rem;
 }
+
+.main__section-projects {
+    background-color: lightgoldenrodyellow;
+}
+.main__section-projects > h1 {
+    text-align: left;
+    font-size: var(--heading-primary);
+    font-weight: 500;
+    margin-bottom: var(--margin-bottom-medium);
+}
+.projects-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.card {
+    height: 200px;
+    background-color: lightseagreen;
+    border-radius: 1rem;
+}
+
+
+
+
+.main__section-messages {
+    background-color: lightcoral;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.main__announcements {
+    border: 2px solid red;
+    margin-bottom: var(--margin-bottom-big);
+    
+}
+.main__announcements > h1 {
+    font-size: var(--heading-primary);
+    font-weight: 500;
+    margin-bottom: var(--margin-bottom-medium);
+}
+
+.main__trending {
+    border: 2px solid lightgreen;
+}
+.main__trending > h1 {
+    font-size: var(--heading-primary);
+    font-weight: 500;
+    margin-bottom: var(--margin-bottom-medium);
+}
+
