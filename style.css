@@ -106,7 +106,7 @@ body {
 /* start of header css */
 .header {
     background-color: var(--body-color-light);
-    padding: 1rem 5rem;
+    padding: 2rem 5rem;
     height: auto;
     border-bottom: 5px solid #ccd1d8;
 }
@@ -115,7 +115,7 @@ body {
     display: grid;
     grid-template-columns: 66% auto auto;
     align-items: center;
-    margin-bottom: var(--margin-bottom-medium);
+    margin-bottom: var(--margin-bottom-big);
 
 }
 .header__search-bar {
@@ -157,6 +157,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: left;
+    gap: 2rem;
     align-items: center; }
     .logo-box__img {
       width: 8rem;
@@ -168,7 +169,7 @@ body {
       font-weight: 700;
       user-select: none; }
   .logo-box__img--2 {
-    width: 16rem;
+    width: 14rem;
   }
   .logo-box__header--2 {
     font-size: 3rem;
