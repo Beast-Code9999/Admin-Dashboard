@@ -7,6 +7,7 @@
     --body-color-light: #fff;
     /* margin padding */
     --margin-bottom-small: .5rem;
+    --margin-bottom-medium: 1rem;
     --margin-bottom-big: 2rem;
 }
 
@@ -28,7 +29,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 4px;
+    /* gap: 4px; */
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -95,10 +96,6 @@ body {
 }
 
 
-.main {
-    background-color: lightblue;
-    grid-column: 2/3;
-}
 
 .footer {
     background-color: lightgreen;
@@ -108,14 +105,17 @@ body {
 
 /* start of header css */
 .header {
-    color: var(--body-color-light);
+    background-color: var(--body-color-light);
     padding: 1rem 5rem;
+    height: auto;
+    border-bottom: 5px solid #ccd1d8;
 }
 
 .header__section-1 {
     display: grid;
     grid-template-columns: 66% auto auto;
     align-items: center;
+    margin-bottom: var(--margin-bottom-medium);
 
 }
 .header__search-bar {
@@ -123,13 +123,11 @@ body {
     align-items: center;
     height: 100%;
     gap: 2rem;
-
-
 }
 .header__search-bar-icon {
     color: black;
     font-size: 3rem;
-    width: 10%;
+    width: auto;
 }
 .header__search-bar-input {
     width: 85%;
@@ -154,7 +152,6 @@ body {
     font-size: 3rem;
 }
 
-
 .logo-box {
     background-color: var(--body-color-light);
     width: 100%;
@@ -170,4 +167,41 @@ body {
       color: #777;
       font-weight: 700;
       user-select: none; }
-  
+  .logo-box__img--2 {
+    width: 16rem;
+  }
+  .logo-box__header--2 {
+    font-size: 3rem;
+  }
+  .logo-box__paragraph {
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif, monospace;
+    font-weight: 600;
+  }
+
+.header__section-2 {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto 10% 10% 10%;
+    align-items: center;
+}
+.header__btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 4rem;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    font-weight: 700;
+}
+.header__btn:hover {
+    cursor: pointer;
+}
+/* end of header css */
+
+/* start of main css */
+.main {
+    grid-column: 2/3;
+    background-color: var(--body-color-dark);
+}
