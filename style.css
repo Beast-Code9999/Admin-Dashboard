@@ -125,9 +125,8 @@ body {
     height: 100%;
     gap: 2rem;
 }
-.header__search-bar-icon {
+.header__search-bar-icon img {
     color: black;
-    font-size: var(--heading-primary);
     width: auto;
 }
 .header__search-bar-icon:hover {
