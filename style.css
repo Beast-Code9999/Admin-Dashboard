@@ -256,29 +256,29 @@ body {
     margin-bottom: var(--margin-bottom-medium);
     text-align: left;
 }
-.announcements-container {
-    padding: 3rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
+
+.announcements-container, .trending-container {
+    padding: 2rem;
     background-color: white;
+    display: grid;
+    gap: 2rem;
     border-radius: 1rem;
 }
-/* .announcements-container > div:not(:last-child) {
-    padding-bottom: 5rem;
-} */
-.announcements-container__div {
-    background-color: lightblue;
+
+.announcements-container__div:not(:last-child) {
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--body-color-dark);
 }
-
-
+.announcements-container__div {
+    text-align: left;
+}
+.announcements-container__heading {
+    margin-bottom: 5px;
+}
 
 .main__trending {
     border: 2px solid lightgreen;
 
 }
-.trending-container {
-    width: 100%;
-    display: grid;
-}
+
 
