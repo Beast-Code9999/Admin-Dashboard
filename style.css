@@ -286,7 +286,7 @@ body {
 }
 .trending-container__img {
     width: 5rem;
-    height: auto;
+    height: 5rem;
     border-radius: 50%;
 }
 .trending-container__text > h3 > a {
