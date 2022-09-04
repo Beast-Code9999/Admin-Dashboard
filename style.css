@@ -47,6 +47,7 @@ body {
     display: grid;
     row-gap: 5rem;
     grid-template-rows: 5rem auto auto;
+    padding-top: 2rem;
 
 }
 .dashboard-logo {
@@ -61,17 +62,17 @@ body {
     padding-left: 2rem;
 }
 .dashboard-logo__logo {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .dashboard-logo__heading {
-    font-size: var(--heading-primary);
+    font-size: var(--heading-secondary);
 }
 /* end of aside logo */
 
 /* nav lists */
 
 .aside__navigation-container:first-child {
-    margin-bottom: var(--margin-bottom-big);
+    margin-bottom: calc(var(--margin-bottom-big) + 4rem);
 }
 
 .aside__list {
@@ -87,12 +88,12 @@ body {
     background-color: #479cdc;
 }
 .aside__list li:not(:last-child) {
-    margin-bottom: var(--margin-bottom-small);
+    margin-bottom: var(--margin-bottom-medium);
 }
 
 .aside__list li > a{
     display: flex;
-    gap: .5rem;
+    gap: 2rem;
     text-decoration: none;
     color: white;
     font-size: var(--heading-secondary);
@@ -232,22 +233,22 @@ body {
 }
 .card {
     height: 225px;
-    background-color: lightseagreen;
+    background-color: white;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: 1rem;
 }
 
 
+
+
 .main__section-messages {
-    /* background-color: lightcoral; */
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: auto;
 }
 
 .main__announcements {
-    /* border: 2px solid red; */
     margin-bottom: var(--margin-bottom-big);
-    
 }
 .main__announcements > h1, .main__trending > h1 {
     font-size: var(--heading-primary);
