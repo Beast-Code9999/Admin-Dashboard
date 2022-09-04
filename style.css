@@ -147,6 +147,7 @@ body {
 }
 .header__search-bar-input:focus {
     outline: none;
+    box-shadow: inset .5rem .5rem 2rem rgba(0, 0, 0, .1);
 }
 
 .header__notification {
@@ -155,9 +156,47 @@ body {
     align-items: center;
     justify-content: center;
 }
-.header__notification > a > span {
+.header__notification span {
     color: black;
     font-size: var(--heading-primary);
+}
+.header__notification a {
+
+}
+.header__notification a:hover {
+    animation-name: bellShake;
+    animation-duration: 1s;
+}
+
+/* animation for bell icon */
+@keyframes bellShake {
+    0% {
+        transform: rotateZ(0);
+    }
+    12.5% {
+        transform: rotateZ(30deg);    
+    }
+    25% {
+        transform: rotateZ(-30deg);
+    }
+    37.5% {
+        transform: rotateZ(30deg);
+    }
+    50% {
+        transform: rotateZ(-30deg);
+    }
+    62.5% {
+        transform: rotateZ(30deg);
+    }
+    75% {
+        transform: rotateZ(-30deg);
+    }
+    /* 87.5% {
+        transform: rotateZ(-30deg);
+    } */
+    100% {
+        transform: rotateZ(0);
+    }
 }
 
 .logo-box {
@@ -203,9 +242,12 @@ body {
     border-radius: 25px;
     border: none;
     font-weight: 700;
+    transition: all .1s;
 }
 .header__btn:hover {
     cursor: pointer;
+    transform: translateY(-2px);
+    background-color: #479cdc;
 
 }
 /* end of header css */
