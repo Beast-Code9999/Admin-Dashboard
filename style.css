@@ -238,14 +238,14 @@ body {
 
 
 .main__section-messages {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: auto;
 }
 
 .main__announcements {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-bottom: var(--margin-bottom-big);
     
 }
@@ -261,6 +261,7 @@ body {
     display: grid;
     gap: 2rem;
     border-radius: 1rem;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .1);
 }
 .announcements-container__div:not(:last-child) {
     padding-bottom: 2rem;
@@ -271,11 +272,6 @@ body {
 }
 .announcements-container__heading {
     margin-bottom: 5px;
-}
-
-.main__trending {
-    border: 2px solid lightgreen;
-
 }
 
 .trending-container > div {
