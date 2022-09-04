@@ -237,14 +237,13 @@ body {
 }
 
 
-
-
 .main__section-messages {
     background-color: lightcoral;
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: auto;
 }
+
 .main__announcements {
     border: 2px solid red;
     margin-bottom: var(--margin-bottom-big);
@@ -256,7 +255,6 @@ body {
     margin-bottom: var(--margin-bottom-medium);
     text-align: left;
 }
-
 .announcements-container, .trending-container {
     padding: 2rem;
     background-color: white;
@@ -264,7 +262,6 @@ body {
     gap: 2rem;
     border-radius: 1rem;
 }
-
 .announcements-container__div:not(:last-child) {
     padding-bottom: 2rem;
     border-bottom: 3px solid var(--body-color-dark);
@@ -281,4 +278,25 @@ body {
 
 }
 
-
+.trending-container > div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+}
+.trending-container__img {
+    width: 5rem;
+    height: auto;
+    border-radius: 50%;
+}
+.trending-container__text > h3 > a {
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+.trending-container__text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
